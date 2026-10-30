@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { background: #f8f8f6; color: #171717; }
+::selection { background: #d8d2c7; color: #171717; }
+.container-wide { width: min(1440px, calc(100% - 48px)); margin-inline: auto; }
+.eyebrow { font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
+.display-title { letter-spacing: -.065em; line-height: .94; }
+.project-image { transition: transform .7s cubic-bezier(.2,.7,.2,1); }
+.project-card:hover .project-image { transform: scale(1.035); }
+a, button { -webkit-tap-highlight-color: transparent; }
+@media (max-width: 640px) { .container-wide { width: min(100% - 32px, 1440px); } }
